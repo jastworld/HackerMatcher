@@ -7,44 +7,51 @@
 
     tools:context="com.hackermatcher.hackermatcher.Activities.LoginActivity"
     >
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="900dp"
         android:orientation="vertical">
-    <Space
-        android:layout_width="1dp"
-        android:layout_height="30dp"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:text="Login"/>
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/login_email"
-        android:hint="email"
-        />
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/login_password"
-        android:hint="password"
-        />
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/login_button"
-        android:text="Login"/>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="signup"
-        android:text="Go to SignUp"/>
-    <Space
-        android:layout_width="1dp"
-        android:layout_height="30dp"/>
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/login_email"
+            android:layout_width="337dp"
+            android:layout_height="wrap_content"
+            android:hint="email" />
+
+        <EditText
+            android:id="@+id/login_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="password" />
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Login" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="signup"
+            android:text="Go to SignUp" />
+
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="30dp" />
 
     </LinearLayout>
 

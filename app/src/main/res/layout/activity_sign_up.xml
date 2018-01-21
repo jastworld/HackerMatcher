@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background2"
     tools:context="com.hackermatcher.hackermatcher.Activities.SignUp">
 
     <LinearLayout
@@ -14,25 +15,37 @@
         android:paddingRight="24dp">
 
         <!-- Full Name Label -->
-        <android.support.design.widget.TextInputLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <EditText android:id="@+id/input_first_name"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textPersonName"
-                android:hint="First name" />
-        </android.support.design.widget.TextInputLayout>
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
 
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <EditText android:id="@+id/input_last_name"
-                android:layout_width="match_parent"
+
+            <EditText
+                android:id="@+id/input_first_name"
+                style="@style/Widget.AppCompat.Light.AutoCompleteTextView"
+                android:layout_width="159dp"
                 android:layout_height="wrap_content"
+                android:hint="First name"
                 android:inputType="textPersonName"
-                android:hint="Last name" />
-        </android.support.design.widget.TextInputLayout>
+                android:selectAllOnFocus="false"
+                android:singleLine="false" />
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/input_last_name"
+                android:layout_width="157dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Last name"
+                android:inputType="textPersonName" />
+
+            </LinearLayout>
+
+
+
+
 
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
